@@ -17,9 +17,9 @@ int main(){
     // ---- end input and malloc----
 
     // implement here
-    int res;
-    for(int i = 0; i < NA-NF+1; i++){
-        res = 0;
+    int x = NA-NF+1;
+    for(int i = 0; i < x; i++){
+        int res = 0;
         for(int j = 0; j < NF; j++){
             res += A[i+j] * F[NF-j-1];
         }

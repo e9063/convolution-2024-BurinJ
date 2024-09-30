@@ -18,10 +18,10 @@ int main(){
     // ---- end input and malloc----
 
     // implement here
-    int res;
+    int x = NA-NF+1;
     #pragma omp parallel for
-    for(int i = 0; i < NA-NF+1; i++){
-        res = 0;
+    for(int i = 0; i < x; i++){
+        int res = 0;
         for(int j = 0; j < NF; j++){
             res += A[i+j] * F[NF-j-1];
         }
