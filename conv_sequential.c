@@ -18,14 +18,21 @@ int main(){
 
     // implement here
     int x = NA-NF+1;
+    int *result = malloc(sizeof(int) * x);
     for(int i = 0; i < x; i++){
         int res = 0;
         for(int j = 0; j < NF; j++){
             res += A[i+j] * F[NF-j-1];
         }
-        printf("%d\n", res);
+        result[i] = res;
     }
+
+    for(int i = 0; i < x; i++){
+        printf("%d\n",result[x])
+    }
+
     // ---- free memory ----
+    free(result);
     free(F);
     free(A);
     // ---- end free ----
