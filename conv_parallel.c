@@ -10,10 +10,10 @@ int main(){
     long long *F = malloc(sizeof(long long) * NF);
 
     for(int i = 0; i < NA; i++){
-        scanf("%d", &A[i]);
+        scanf("%lld", &A[i]);
     }
     for(int i = 0; i < NF; i++){
-        scanf("%d", &F[i]);
+        scanf("%lld", &F[i]);
     }
     // ---- end input and malloc----
 
